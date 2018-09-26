@@ -75,6 +75,14 @@ class LoginController: UIViewController {
         return tf
     }()
     
+    let profileImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "oalogo")
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.contentMode = .scaleAspectFill
+        return imageView
+    }()
+    
     
     
     
@@ -87,15 +95,22 @@ class LoginController: UIViewController {
     //views
     view.addSubview(inputsContainerView)
     view.addSubview(LoginRegisterButton)
+    view.addSubview(profileImageView)
    
     
     //calls functions
     setupInputsContainerView()
     setupLoginRegisterButton()
+    setupProfileImageView()
     }
     
-    
-    
+    func setupProfileImageView() {
+        //need x, y, width, height constraints
+        profileImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        profileImageView.bottomAnchor.constraint(equalTo: inputsContainerView.topAnchor, constant: -12).isActive = true
+        profileImageView.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        profileImageView.heightAnchor.constraint(equalToConstant: 150).isActive = true
+    }
     
     
     func setupInputsContainerView(){
