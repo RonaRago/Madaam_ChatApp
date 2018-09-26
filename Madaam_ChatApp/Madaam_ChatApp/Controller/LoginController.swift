@@ -13,8 +13,19 @@ class LoginController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //Background Color
-        view.backgroundColor = UIColor.init(red: 61/255, green: 91/255, blue: 151/255, alpha: 1)
+    //Background Color
+    view.backgroundColor = UIColor(r: 61, g: 91, b: 155)
     }
-
+    
+    //Status Bar Style
+    func preferredStatusBarStyle() -> UIStatusBarStyle {
+    return .lightContent
+    }
 }
+
+    //Extension for RGB Colors
+    extension UIColor{
+        convenience init(r: CGFloat, g: CGFloat, b: CGFloat){
+        self.init(red: r/255, green: g/255, blue: b/255, alpha: 1)
+        }
+    }
