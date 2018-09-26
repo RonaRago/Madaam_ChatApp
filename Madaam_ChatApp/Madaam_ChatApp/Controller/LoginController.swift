@@ -10,6 +10,7 @@ import UIKit
 
 class LoginController: UIViewController {
     
+    // Fields Contrainer
     let inputsContainerView: UIView = {
         let view = UIView()
         view.backgroundColor = UIColor.white
@@ -19,6 +20,16 @@ class LoginController: UIViewController {
         return view
     }()
     
+    // Register Button
+    let LoginRegisterButton: UIButton = {
+        let button = UIButton (type: .system)
+        button.backgroundColor = UIColor(r: 80, g: 101, b: 161)
+        button.setTitle("Register", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitleColor(UIColor.white, for: .normal)
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,7 +37,10 @@ class LoginController: UIViewController {
     view.backgroundColor = UIColor(r: 61, g: 91, b: 155)
     
     view.addSubview(inputsContainerView)
+    view.addSubview(LoginRegisterButton)
+    
     setupInputsContainerView()
+    setupLoginRegisterButton()
     }
     func setupInputsContainerView(){
         //Contraints x, y ,with, height contraints
@@ -35,6 +49,16 @@ class LoginController: UIViewController {
         inputsContainerView.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -24).isActive = true
         inputsContainerView.heightAnchor.constraint(equalToConstant: 150).isActive = true
     }
+    
+    func setupLoginRegisterButton(){
+        //Contraints x, y ,with, height contraints
+        LoginRegisterButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        LoginRegisterButton.topAnchor.constraint(equalTo: inputsContainerView.bottomAnchor, constant: 12).isActive = true
+        LoginRegisterButton.widthAnchor.constraint(equalTo: inputsContainerView.widthAnchor, constant: 12).isActive = true
+        LoginRegisterButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        
+    }
+    
     //Status Bar Style
     func preferredStatusBarStyle() -> UIStatusBarStyle {
     return .lightContent
