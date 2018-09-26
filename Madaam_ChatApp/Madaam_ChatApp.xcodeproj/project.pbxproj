@@ -13,6 +13,7 @@
 		04135402215B58BB0002ADC1 /* Madaam_ChatApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04135400215B58BB0002ADC1 /* Madaam_ChatApp.xcdatamodeld */; };
 		04135404215B58BC0002ADC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04135403215B58BC0002ADC1 /* Assets.xcassets */; };
 		04135407215B58BC0002ADC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04135405215B58BC0002ADC1 /* LaunchScreen.storyboard */; };
+		04135411215B81F50002ADC1 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04135410215B81F50002ADC1 /* LoginController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		04135403215B58BC0002ADC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04135406215B58BC0002ADC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04135408215B58BC0002ADC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04135410215B81F50002ADC1 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		041353F8215B58BB0002ADC1 /* Madaam_ChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				0413540F215B81B70002ADC1 /* Controller */,
 				041353F9215B58BB0002ADC1 /* AppDelegate.swift */,
 				041353FB215B58BB0002ADC1 /* ViewController.swift */,
 				041353FD215B58BB0002ADC1 /* Main.storyboard */,
@@ -65,6 +68,14 @@
 				04135400215B58BB0002ADC1 /* Madaam_ChatApp.xcdatamodeld */,
 			);
 			path = Madaam_ChatApp;
+			sourceTree = "<group>";
+		};
+		0413540F215B81B70002ADC1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04135410215B81F50002ADC1 /* LoginController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				041353FC215B58BB0002ADC1 /* ViewController.swift in Sources */,
+				04135411215B81F50002ADC1 /* LoginController.swift in Sources */,
 				041353FA215B58BB0002ADC1 /* AppDelegate.swift in Sources */,
 				04135402215B58BB0002ADC1 /* Madaam_ChatApp.xcdatamodeld in Sources */,
 			);
