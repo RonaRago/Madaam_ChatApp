@@ -14,6 +14,8 @@
 		04135404215B58BC0002ADC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04135403215B58BC0002ADC1 /* Assets.xcassets */; };
 		04135407215B58BC0002ADC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04135405215B58BC0002ADC1 /* LaunchScreen.storyboard */; };
 		04135411215B81F50002ADC1 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04135410215B81F50002ADC1 /* LoginController.swift */; };
+		04135413215C72750002ADC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04135412215C72740002ADC1 /* GoogleService-Info.plist */; };
+		4E27DC06311A81B86B19C291 /* Pods_Madaam_ChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBB7F463A42E8D49130E456 /* Pods_Madaam_ChatApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		04135406215B58BC0002ADC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04135408215B58BC0002ADC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04135410215B81F50002ADC1 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		04135412215C72740002ADC1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0B93D3A15779F312B991D42A /* Pods-Madaam_ChatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Madaam_ChatApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Madaam_ChatApp/Pods-Madaam_ChatApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4CBB7F463A42E8D49130E456 /* Pods_Madaam_ChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Madaam_ChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB581DE37B3A9CBDBD991742 /* Pods-Madaam_ChatApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Madaam_ChatApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Madaam_ChatApp/Pods-Madaam_ChatApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E27DC06311A81B86B19C291 /* Pods_Madaam_ChatApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,8 @@
 			children = (
 				041353F8215B58BB0002ADC1 /* Madaam_ChatApp */,
 				041353F7215B58BB0002ADC1 /* Products */,
+				F7CD49B75F519AFE3669C11D /* Pods */,
+				64ECDC4224C5295422829576 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +73,7 @@
 				04135403215B58BC0002ADC1 /* Assets.xcassets */,
 				04135405215B58BC0002ADC1 /* LaunchScreen.storyboard */,
 				04135408215B58BC0002ADC1 /* Info.plist */,
+				04135412215C72740002ADC1 /* GoogleService-Info.plist */,
 				04135400215B58BB0002ADC1 /* Madaam_ChatApp.xcdatamodeld */,
 			);
 			path = Madaam_ChatApp;
@@ -78,6 +88,23 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		64ECDC4224C5295422829576 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CBB7F463A42E8D49130E456 /* Pods_Madaam_ChatApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7CD49B75F519AFE3669C11D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B93D3A15779F312B991D42A /* Pods-Madaam_ChatApp.debug.xcconfig */,
+				CB581DE37B3A9CBDBD991742 /* Pods-Madaam_ChatApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0413540B215B58BC0002ADC1 /* Build configuration list for PBXNativeTarget "Madaam_ChatApp" */;
 			buildPhases = (
+				6EBBFE359E1062E866D89EC5 /* [CP] Check Pods Manifest.lock */,
 				041353F2215B58BB0002ADC1 /* Sources */,
 				041353F3215B58BB0002ADC1 /* Frameworks */,
 				041353F4215B58BB0002ADC1 /* Resources */,
+				A1B987017381D2991E2EFDE9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -137,12 +166,56 @@
 			buildActionMask = 2147483647;
 			files = (
 				04135407215B58BC0002ADC1 /* LaunchScreen.storyboard in Resources */,
+				04135413215C72750002ADC1 /* GoogleService-Info.plist in Resources */,
 				04135404215B58BC0002ADC1 /* Assets.xcassets in Resources */,
 				041353FF215B58BB0002ADC1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6EBBFE359E1062E866D89EC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Madaam_ChatApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1B987017381D2991E2EFDE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Madaam_ChatApp/Pods-Madaam_ChatApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Madaam_ChatApp/Pods-Madaam_ChatApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		041353F2215B58BB0002ADC1 /* Sources */ = {
@@ -296,6 +369,7 @@
 		};
 		0413540C215B58BC0002ADC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B93D3A15779F312B991D42A /* Pods-Madaam_ChatApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -314,6 +388,7 @@
 		};
 		0413540D215B58BC0002ADC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB581DE37B3A9CBDBD991742 /* Pods-Madaam_ChatApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

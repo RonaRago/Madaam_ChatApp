@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginController: UIViewController {
     
@@ -21,16 +22,35 @@ class LoginController: UIViewController {
     }()
     
     // Register Button
-    let LoginRegisterButton: UIButton = {
+    lazy var LoginRegisterButton: UIButton = {
     let button = UIButton (type: .system)
     button.backgroundColor = UIColor(r: 80, g: 101, b: 161)
     button.setTitle("Register", for: .normal)
     button.translatesAutoresizingMaskIntoConstraints = false
     button.setTitleColor(UIColor.white, for: .normal)
     button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
+        
+        button.addTarget(self, action: #selector(handleRegister), for: .touchUpInside)
+
     return button
     }()
     
+    @objc func handleRegister(){
+        guard let email = emailTextField.text, let password = passwordTextField.text else {
+        print("Invalid Input!")
+        return
+        }
+        
+        Auth.auth().createUser(withEmail: email, password: password, completion:
+        { user ,error in
+        if let firebaseError = error
+        {print(firebaseError.localizedDescription)
+        return
+        }
+        print("Success!")
+        })
+    }
+
     //Name Textfield
     let nameTextField: UITextField = {
         let tf = UITextField()
